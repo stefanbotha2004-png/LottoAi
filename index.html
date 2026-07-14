@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>South African Lotto AI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+🇿🇦 LottoAI
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Generator</a></li>
+<li><a href="#">Statistics</a></li>
+<li><a href="#">Hot & Cold</a></li>
+<li><a href="#">History</a></li>
+
+</ul>
+
+<button id="themeButton">
+
+🌙 Dark Mode
+
+</button>
+
+</nav>
+
+<section class="hero">
+
+<h1>
+
+South African Lotto AI
+
+</h1>
+
+<p>
+
+Generate intelligent balanced lottery numbers using advanced statistical algorithms.
+
+</p>
+
+<button class="generateMain" onclick="generateTickets(1)">
+
+Generate Ticket
+
+</button>
+
+</section>
+
+</header>
+
+<main>
+
+<section class="dashboard">
+
+<div class="card">
+
+<h2>Tickets Generated</h2>
+
+<h1 id="ticketCount">
+
+0
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Average Sum</h2>
+
+<h1 id="averageSum">
+
+0
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Balanced Score</h2>
+
+<h1>
+
+98%
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>AI Confidence</h2>
+
+<h1>
+
+95%
+
+</h1>
+
+</div>
+
+</section>
+
+<section class="generator">
+
+<h2>
+
+AI Generator
+
+</h2>
+
+<div class="buttonGrid">
+
+<button onclick="generateTickets(1)">1 Ticket</button>
+
+<button onclick="generateTickets(5)">5 Tickets</button>
+
+<button onclick="generateTickets(10)">10 Tickets</button>
+
+<button onclick="generateTickets(25)">25 Tickets</button>
+
+<button onclick="generateTickets(50)">50 Tickets</button>
+
+<button onclick="generateTickets(100)">100 Tickets</button>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox" checked>
+
+Balanced Mode
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Lucky Pick
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Hot & Cold Analysis
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+Smart Wheel
+
+</label>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Generated Tickets
+
+</h2>
+
+<div id="ticketContainer">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="statCard">
+
+<h3>
+
+🔥 Hot Numbers
+
+</h3>
+
+<div id="hotNumbers">
+
+11 18 27 42 49
+
+</div>
+
+</div>
+
+<div class="statCard">
+
+<h3>
+
+❄ Cold Numbers
+
+</h3>
+
+<div id="coldNumbers">
+
+2 8 15 21 51
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Winning Number Checker
+
+</h2>
+
+<div class="checker">
+
+<input id="winningNumbers"
+
+placeholder="Example: 3 11 18 26 39 49">
+
+<button onclick="checkTickets()">
+    Check My Tickets
+</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Saved Tickets
+
+</h2>
+
+<div id="savedTickets">
+
+No saved tickets yet.
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+AI Number Frequency
+
+</h2>
+
+<canvas id="frequencyChart">
+
+</canvas>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+South African Lotto AI
+
+</p>
+
+<p>
+
+Created using HTML, CSS and JavaScript
+
+</p>
+
+<p>
+
+This application generates statistically balanced random numbers.
+
+No software or AI can predict future lottery draws.
+
+</p>
+
+</footer>
+
+<script src="ai.js"></script>
+<script src="storage.js"></script>
+<script src="checker.js"></script>
+<script src="charts.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
